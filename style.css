@@ -1,0 +1,21 @@
+.image-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+figure {
+    width: min-content;
+}
+figure img {
+    max-height: 7em;
+    max-width: 10em;
+}
+figure figcaption {
+    text-align: center;
+}
+
+.infobox {
+    float: right;
+    width: 3em;
+    background-color: #EEE;
+}
