@@ -14,6 +14,11 @@
         buildInputs = [
           pkgs.vscode-langservers-extracted
           pkgs.nodePackages.prettier
+          (pkgs.python3.withPackages (pyPkgs: with pyPkgs; [
+            requests
+            beautifulsoup4
+            soupsieve
+          ]))
         ];
       };
     };
