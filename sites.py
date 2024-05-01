@@ -42,6 +42,16 @@ class SiteChecks(unittest.TestCase):
         actual = soup.select('span.ml-1.wb-break-all')[0].get_text().strip()
         self.assertEqual(version, actual)
 
+    def test_fitbenchmarking(self):
+        import re
+        version = "v1.0.0"
+
+        r = requests.get("https://github.com/fitbenchmarking/fitbenchmarking/releases")
+        self.assertEqual(r.status_code, 200)
+        soup = BeautifulSoup(r.text, features="html.parser")
+        actual = soup.select('span.ml-1.wb-break-all')[0].get_text().strip()
+        self.assertEqual(version, actual)
+
 
 if __name__=="__main__":
     unittest.main()
