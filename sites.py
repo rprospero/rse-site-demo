@@ -32,7 +32,7 @@ class SiteChecks(unittest.TestCase):
         actual = soup.select('span.ml-1.wb-break-all')[1].get_text().strip()
         self.assertEqual(version, actual)
 
-    def test_mdanse(self):
+    def test_sscanss(self):
         import re
         version = "v2.1.1"
 
