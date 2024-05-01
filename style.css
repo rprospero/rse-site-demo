@@ -32,3 +32,17 @@ h2 {
     width: 3em;
     background-color: #EEE;
 }
+
+
+td img {
+    max-height: 5em;
+    max-width: 5em;
+}
+
+tr:nth-child(2n+0) {
+    background-color: #EEE;
+}
+
+thead {
+    font-weight: bolder;
+}
