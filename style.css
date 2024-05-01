@@ -1,7 +1,16 @@
+@font-face {
+  font-family: "ComicMono";
+  src: url("ComicMono.ttf");
+}
+
+body {
+    font-family: "ComicMono", cursive;
+}
 .image-list {
     display: flex;
+    width: 100vw;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 figure {
     width: min-content;
