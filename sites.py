@@ -52,6 +52,16 @@ class SiteChecks(unittest.TestCase):
         actual = soup.select('span.ml-1.wb-break-all')[0].get_text().strip()
         self.assertEqual(version, actual)
 
+    def test_mantid(self):
+        import re
+        version = "v6.9.1"
+
+        r = requests.get("https://www.mantidproject.org/installation/index")
+        self.assertEqual(r.status_code, 200)
+        soup = BeautifulSoup(r.text, features="html.parser")
+        actual = soup.select('#latest-release p strong')[0].get_text().strip()
+        self.assertEqual(version, actual)
+
 
 if __name__=="__main__":
     unittest.main()
