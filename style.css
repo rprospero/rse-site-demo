@@ -4,51 +4,50 @@
 }
 
 body {
-    font-family: "ComicMono", cursive;
+  font-family: "ComicMono", cursive;
 }
 .image-list {
-    display: flex;
-    width: 100vw;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: flex;
+  width: 100vw;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 figure {
-    width: min-content;
+  width: min-content;
 }
 figure img {
-    max-height: 7em;
-    max-width: 10em;
+  max-height: 7em;
+  max-width: 10em;
 }
 figure figcaption {
-    text-align: center;
+  text-align: center;
 }
 
 h2 {
-    text-align: center;
+  text-align: center;
 }
 
 .infobox {
-    float: right;
-    width: 3em;
-    background-color: #EEE;
+  float: right;
+  width: 3em;
+  background-color: #eee;
 }
-
 
 td img {
-    max-height: 3em;
-    max-width: 3em;
+  max-height: 3em;
+  max-width: 3em;
 }
 
-tr:nth-child(2n+0) {
-    background-color: #EEE;
+tr:nth-child(2n + 0) {
+  background-color: #eee;
 }
 
 thead {
-    font-weight: bolder;
+  font-weight: bolder;
 }
 
 tbody {
-    border-top: 1px solid black;
+  border-top: 1px solid black;
 }
 
 table {
