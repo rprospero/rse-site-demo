@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Site Demo</title>
+<meta name="author" content="Adam Washington"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/moon.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">Site Demo</h1><p class="subtitle"></p>
+<h2 class="author">Adam Washington</h2><h2 class="date">2024-05-03</h2><p class="date">Created: 2024-05-02 Thu 14:29</p>
+</section>
+<section id="sec-table-of-contents"><div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#/slide-org9192e9c">1. Basics</a></li>
+<li><a href="#/slide-org08dc28c">2. Standard Layout</a></li>
+<li><a href="#/slide-org954b09d">3. Compact Layout</a></li>
+<li><a href="#/slide-org1327d47">4. Maintenance</a></li>
+</ul>
+</div>
+</div>
+</section>
+
+<section>
+<section id="slide-org9192e9c">
+<h2 id="org9192e9c"><span class="section-number-2">1.</span> Basics</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+</section>
+<section id="slide-org344a380">
+<h3 id="org344a380"><span class="section-number-3">1.1.</span> Prototype</h3>
+<p>
+These are prototypes for possible changes that we could make to the
+Scientific Software pages on the ISIS website.
+</p>
+
+<p>
+To emphasise the <b>prototype</b> nature, I've added minimal styling and an
+unprofessional font.  We're mostly discussing the general content at
+this point.
+</p>
+
+<p>
+Similarly, the exact content is also being saved for a later date.
+This talk is more about "what should we say" and less about "how
+should we say it"
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-org08dc28c">
+<h2 id="org08dc28c"><span class="section-number-2">2.</span> Standard Layout</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+</section>
+<section id="slide-org8138a75">
+<h3 id="org8138a75"><span class="section-number-3">2.1.</span> Site</h3>
+<p>
+<a href="https://rprospero.github.io/rse-site-demo/">Link</a>
+</p>
+
+</section>
+<section id="slide-org01b4b91">
+<h3 id="org01b4b91"><span class="section-number-3">2.2.</span> Open Questions</h3>
+<ul>
+<li>What other info should be included on the project pages</li>
+
+<li>Is there a better way to organise the projects than by technique?</li>
+
+<li>Is the recent news useful?</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org954b09d">
+<h2 id="org954b09d"><span class="section-number-2">3.</span> Compact Layout</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+</section>
+<section id="slide-orge69306e">
+<h3 id="orge69306e"><span class="section-number-3">3.1.</span> Site</h3>
+<p>
+<a href="https://rprospero.github.io/rse-site-demo/compact.html">Link</a>
+</p>
+
+</section>
+<section id="slide-org58838a3">
+<h3 id="org58838a3"><span class="section-number-3">3.2.</span> Open Questions</h3>
+<ul>
+<li>Is this better than the extended layout</li>
+<li>Would we even need the project pages?</li>
+<li>Do we need more/less columns?</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org1327d47">
+<h2 id="org1327d47"><span class="section-number-2">4.</span> Maintenance</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+</section>
+<section id="slide-org1ab209f">
+<h3 id="org1ab209f"><span class="section-number-3">4.1.</span> Maintenance Script</h3>
+<div class="outline-text-3" id="text-4-1">
+</div>
+<ol class="org-ol">
+<li><a id="orge26ff8b"></a>Goals<br />
+<ul>
+<li>Allow site maintainer to keep site up to date</li>
+<li>Not require extra work from project teams</li>
+<li>Only require a few minutes a month (amortised)</li>
+
+</ul>
+</li>
+
+<li><a id="org7caff9a"></a>Anti-Goals<br />
+<ul>
+<li>Do not attempt to automate site update</li>
+
+</ul>
+</li>
+</ol>
+
+</section>
+<section id="slide-org48bb0c2">
+<h3 id="org48bb0c2"><span class="section-number-3">4.2.</span> Implementation</h3>
+<ul>
+<li>Every package has a test in the python <code>unittest</code> package</li>
+<li>Run the test each month
+<ul>
+<li>if every test passes, there's nothing to do</li>
+
+</ul></li>
+<li>If a test fails, there's probably been an update to a package
+<ul>
+<li>Update the test to pass again</li>
+<li>If there's been an update to the package, also update the site</li>
+
+</ul></li>
+<li>Intentionally brittle</li>
+
+</ul>
+
+</section>
+<section id="slide-org4dfa4d7">
+<h3 id="org4dfa4d7"><span class="section-number-3">4.3.</span> Example Script</h3>
+<div class="org-src-container">
+
+<pre  class="src src-python"   ><code trim><span style="color: #e392ff;">def</span> <span style="color: #00bcff;">test_dissolve</span><span style="color: #e392ff;">(</span><span style="color: #e392ff;">self</span><span style="color: #e392ff;">)</span>:
+    <span style="color: #ff8754;">version</span> = <span style="color: #00d4b2;">"1.5.1"</span>
+
+    <span style="color: #ff8754;">r</span> = requests.get<span style="color: #e392ff;">(</span><span style="color: #00d4b2;">"https://projectdissolve.com/packages/"</span><span style="color: #e392ff;">)</span>
+    <span style="color: #e392ff;">self</span>.assertEqual<span style="color: #e392ff;">(</span>r.status_code, 200<span style="color: #e392ff;">)</span>
+    <span style="color: #ff8754;">soup</span> = BeautifulSoup<span style="color: #e392ff;">(</span>r.text, features=<span style="color: #00d4b2;">"html.parser"</span><span style="color: #e392ff;">)</span>
+    <span style="color: #ff8754;">actual</span> = soup.select_one<span style="color: #e392ff;">(</span><span style="color: #00d4b2;">'a[href="#release"]'</span><span style="color: #e392ff;">)</span>.get_text<span style="color: #e392ff;">()</span>
+    <span style="color: #e392ff;">self</span>.assertEqual<span style="color: #e392ff;">(</span>version, actual<span style="color: #e392ff;">)</span>
+
+</code></pre>
+</div>
+
+</section>
+<section id="slide-orga728e80">
+<h3 id="orga728e80"><span class="section-number-3">4.4.</span> Open Questions</h3>
+<ul>
+<li>Do we even <b>want</b> automation?
+<ul>
+<li>One person tracking all the packages <b>will</b> be overwhelmed</li>
+<li>Requiring developers to send updates to the site maintainer <b>will</b>
+be forgotten</li>
+
+</ul></li>
+<li>Is this the right tool for the job?</li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+
+</script>
+</body>
+</html>

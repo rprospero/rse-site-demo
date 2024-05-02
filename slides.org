@@ -1,0 +1,92 @@
+#+TITLE: Site Demo
+#+AUTHOR: Adam Washington
+#+DATE: 2024-05-03
+#+OPTIONS:  toc:1 H:2
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+
+* Basics
+
+** Prototype
+
+These are prototypes for possible changes that we could make to the
+Scientific Software pages on the ISIS website.
+
+To emphasise the *prototype* nature, I've added minimal styling and an
+unprofessional font.  We're mostly discussing the general content at
+this point.
+
+Similarly, the exact content is also being saved for a later date.
+This talk is more about "what should we say" and less about "how
+should we say it"
+
+* Linear Layout
+
+** Site
+
+[[https://rprospero.github.io/rse-site-demo/][Link]]
+
+** Open Questions
+
+- What other info should be included on the project pages
+
+- Is there a better way to organise the projects than by technique?
+
+- Is the recent news useful?
+
+* Compact Layout
+
+** Site
+
+[[https://rprospero.github.io/rse-site-demo/compact.html][Link]]
+
+** Open Questions
+
+- Is this better than the extended layout
+- Would we even need the project pages?
+- Do we need more/less columns?
+
+* Maintenance
+
+** Maintenance Script
+
+*** Goals
+
+- Allow site maintainer to keep site up to date
+- Not require extra work from project teams
+- Only require a few minutes a month (amortised)
+
+*** Anti-Goals
+
+- Do not attempt to automate site update
+
+** Implementation
+
+- Every package has a test in the python =unittest= package
+- Run the test each month
+  - if every test passes, there's nothing to do
+- If a test fails, there's probably been an update to a package
+  - Update the test to pass again
+  - If there's been an update to the package, also update the site
+- Intentionally brittle
+
+** Example Script
+
+#+BEGIN_SRC python
+def test_dissolve(self):
+    version = "1.5.1"
+
+    r = requests.get("https://projectdissolve.com/packages/")
+    self.assertEqual(r.status_code, 200)
+    soup = BeautifulSoup(r.text, features="html.parser")
+    actual = soup.select_one('a[href="#release"]').get_text()
+    self.assertEqual(version, actual)
+
+#+END_SRC
+
+** Open Questions
+
+- Do we even *want* automation?
+  - One person manually tracking all the packages *will* be overwhelmed
+  - Requiring developers to send updates to the site maintainer *will*
+    be forgotten
+- Is this the right tool for the job?
