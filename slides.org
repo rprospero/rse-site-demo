@@ -8,16 +8,13 @@
 
 ** Prototype
 
-These are prototypes for possible changes that we could make to the
-Scientific Software pages on the ISIS website.
-
-To emphasise the *prototype* nature, I've added minimal styling and an
-unprofessional font.  We're mostly discussing the general content at
-this point.
-
-Similarly, the exact content is also being saved for a later date.
-This talk is more about "what should we say" and less about "how
-should we say it"
+- Possible changes to the Scientific Software Pages
+- Just a prototype
+  - Just discussing desired content
+  - Intentionally terrible Font and minimal styling
+- Only high level content discussion
+  - What to say, not how to say it
+  - Lot's of Lorem Ipsum
 
 * Linear Layout
 
@@ -27,7 +24,7 @@ should we say it"
 
 ** Open Questions
 
-- What other info should be included on the project pages
+- What other info should be included on the project pages?
 
 - Is there a better way to organise the projects than by technique?
 
@@ -41,7 +38,7 @@ should we say it"
 
 ** Open Questions
 
-- Is this better than the extended layout
+- Is this better than the extended layout?
 - Would we even need the project pages?
 - Do we need more/less columns?
 
