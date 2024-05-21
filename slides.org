@@ -1,6 +1,6 @@
 #+TITLE: Site Demo
 #+AUTHOR: Adam Washington
-#+DATE: 2024-05-03
+#+DATE: 2024-05-22
 #+OPTIONS:  toc:1 H:2
 #+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
 
@@ -11,16 +11,9 @@
 - Possible changes to the Scientific Software Pages
 - Just a prototype
   - Just discussing desired content
-  - Intentionally terrible Font and minimal styling
+  - Intentionally unprofessional font and minimal styling
 - Only high level content discussion
   - What to say, not how to say it
-  - Lot's of Lorem Ipsum
-
-* Linear Layout
-
-** Site
-
-[[https://rprospero.github.io/rse-site-demo/][Link]]
 
 ** Open Questions
 
@@ -30,7 +23,7 @@
 
 - Is the recent news useful?
 
-* Compact Layout
+* Layout
 
 ** Site
 
@@ -38,9 +31,13 @@
 
 ** Open Questions
 
-- Is this better than the extended layout?
+- Is there a better way to handle the grouping?
+  - Some instruments have nothing beyond Mantid
+  - Some instruments have multiple techniques
 - Would we even need the project pages?
 - Do we need more/less columns?
+  - Do the logos add anything?
+  - Do we need to link to the source?
 
 * Maintenance
 
@@ -52,11 +49,7 @@
 - Not require extra work from project teams
 - Only require a few minutes a month (amortised)
 
-*** Anti-Goals
-
-- Do not attempt to automate site update
-
-** Implementation
+** Partial Implementation
 
 - Every package has a test in the python =unittest= package
 - Run the test each month
@@ -80,10 +73,23 @@ def test_dissolve(self):
 
 #+END_SRC
 
-** Open Questions
+** Official Implementation
 
-- Do we even *want* automation?
-  - One person manually tracking all the packages *will* be overwhelmed
-  - Requiring developers to send updates to the site maintainer *will*
-    be forgotten
-- Is this the right tool for the job?
+[[https://isisneutronmuon.github.io/]]
+
+Fully automated via GitHub action
+
+** Comparison
+
+| Mine                                   | Official                       |
+|----------------------------------------+--------------------------------|
+| Human needed for updates               | Human needed when it breaks    |
+| Link to official project download page | Always use GitHub release page |
+| Checks for dead site links             | Doesn't bother with site links |
+
+Ultimately, the page needs to be on the ISIS SharePoint site, which
+limits the options for full automation.
+
+** Open Question
+
+Which approach do we prefer?
