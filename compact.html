@@ -15,19 +15,57 @@
 
     <h3>Recent News</h3>
     <ul>
+      <li>15 May 2024 - FitBenchmarking released version 1.1.0</li>
       <li>23 April 2024 - Dissolve released version 1.5.1</li>
-      <li>26 March 2024 - Mantid released version 6.9.1</li>
+      <li>15 April 2024 - MuSSIC released version 1.1</li>
     </ul>
+
+    <h3>Instruments</h3>
+    <a href="#reflect">Crisp</a>
+    <a href="#stress">Engin-X</a>
+    <a href="#diff">GEM</a>
+    <a href="#diff">HRPD</a>
+    <a href="#imaging">IMAT</a>
+    <a href="#diff">INES</a>
+    <a href="#reflect">Inter</a>
+    <a href="#spectroscopy">Iris</a>
+    <a href="#sans">Larmor</a>
+    <a href="#spectroscopy">LET</a>
+    <a href="#sans">Loq</a>
+    <a href="#spectroscopy">MAPS</a>
+    <a href="#spectroscopy">MARI</a>
+    <a href="#spectroscopy">Merlin</a>
+
+    <a href="#diff">NIMROD</a>
+    <a href="#reflect">Offspec</a>
+    <a href="#diff">OSIRIS</a>
+    <a href="#diff">PEARL</a>
+    <a href="#diff">Polaris</a>
+    <a href="#reflect">POLREF</a>
+    <a href="#diff">SANDALS</a>
+    <a href="#sans">Sans2d</a>
+    <a href="#reflect">Surf</a>
+    <a href="#diff">SXD</a>
+    <a href="#spectroscopy">Tosca</a>
+    <a href="#spectroscopy">Vesuvio</a>
+    <a href="#diff">WISH</a>
+    <a href="#sans">Zoom</a>
     <h3>Projects</h3>
-    <table>
+    <table
+      border="2"
+      cellspacing="0"
+      cellpadding="6"
+      rules="groups"
+      frame="hsides"
+    >
       <thead>
         <tr>
-          <td>Technique</td>
-          <td>Logo</td>
-          <td>Project</td>
-          <td>Description</td>
-          <td>Version</td>
-          <td>Source</td>
+          <th>Technique</th>
+          <th>Logo</th>
+          <th>Project</th>
+          <th>Description</th>
+          <th>Version</th>
+          <th>Source</th>
         </tr>
       </thead>
       <tbody>
@@ -35,11 +73,11 @@
           <td>All</td>
           <td>
             <a href="https://fitbenchmarking.github.io/"
-              ><img src="fbmlogo-cir.png"
+              ><img src="fbmlogo-cir.png" alt="fbmlogo-cir.png"
             /></a>
           </td>
-          <td><a href="fit-benchmarking.html">Fit Benchmarking</a></td>
-          <td>Comparison of fitting methods</td>
+          <td>Fit Benchmarking</td>
+          <td>Comparison of Fitting Methods</td>
           <td>
             <a
               href="https://github.com/fitbenchmarking/fitbenchmarking/releases/tag/v1.0.0"
@@ -55,38 +93,104 @@
 
         <tr>
           <td>All</td>
-          <td>
-            <a href="https://data.isis.stfc.ac.uk/datagateway">ICAT</a>
-          </td>
-          <td><a href="icat.html">ICAT</a></td>
+          <td>&#xa0;</td>
+          <td><a href="https://data.isis.stfc.ac.uk/datagateway">ICAT</a></td>
           <td>Data Catalogue</td>
-          <td></td>
-          <td></td>
+          <td>&#xa0;</td>
+          <td>&#xa0;</td>
         </tr>
+
         <tr>
           <td>All</td>
           <td>
             <a href="https://www.mantidproject.org/"
-              ><img src="mantid.png"
+              ><img src="mantid.png" alt="mantid.png"
             /></a>
           </td>
-          <td><a href="mantid.html">Mantid</a></td>
+          <td>Mantid</td>
           <td>Data Reduction and Analysis</td>
           <td>
             <a href="https://www.mantidproject.org/installation/index">6.9.1</a>
           </td>
+          <td>GitHub</td>
+        </tr>
+
+        <tr>
+          <td>All</td>
+          <td>&#xa0;</td>
+          <td><a href="https://github.com/gcassella/RAMP">RAMP</a></td>
           <td>
-            <a href="https://github.com/mantidproject/mantid">GitHub</a>
+            Monte Carlo raytracing package for the simulation of neutron
+            instrumentation
           </td>
+          <td>
+            <a href="https://github.com/gcassella/RAMP/releases/tag/v0.0.3"
+              >McStas Workshop Release</a
+            >
+          </td>
+          <td><a href="https://github.com/gcassella/RAMP">GitHub</a></td>
         </tr>
       </tbody>
       <tbody>
+        <tr id="diff">
+          <td>Diffraction</td>
+          <td>&#xa0;</td>
+          <td><a href="https://projectaten.com">Aten</a></td>
+          <td>
+            editing atomic configurations such as those used by, and generated
+            from, EPSR
+          </td>
+          <td>
+            <a href="https://github.com/trisyoungs/aten/releases/tag/Last"
+              >Final</a
+            >
+          </td>
+          <td><a href="https://github.com/trisyoungs/aten/">GitHub</a></td>
+        </tr>
+
         <tr>
           <td>Diffraction</td>
+          <td>&#xa0;</td>
           <td>
-            <a href="https://projectdissolve.com"><img src="dissolve.png" /></a>
+            <a href="https://github.com/disorderedmaterials/GudPy">GudPy</a>
           </td>
-          <td><a href="dissolve.html">Dissolve</a></td>
+          <td>
+            Python-based batch processing and alternative GUI for Gudrun also
+            offering additional functionality unavailable in the Gudrun Java GUI
+          </td>
+          <td>
+            <a
+              href="https://github.com/disorderedmaterials/GudPy/releases/tag/0.5.0"
+              >0.5.0</a
+            >
+          </td>
+          <td>
+            <a href="https://github.com/disorderedmaterials/GudPy">GitHub</a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Diffraction</td>
+          <td>&#xa0;</td>
+          <td>
+            <a href="https://github.com/disorderedmaterials/Gudrun/">Gudrun</a>
+          </td>
+          <td>reducing data from neutron and x-ray scattering experiments</td>
+          <td>
+            <a
+              href="https://github.com/disorderedmaterials/Gudrun/releases/tag/2024.1"
+              >2024.1</a
+            >
+          </td>
+          <td>
+            <a href="https://github.com/disorderedmaterials/Gudrun/">GitHub</a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Diffraction</td>
+          <td><img src="dissolve.png" alt="dissolve.png" /></td>
+          <td><a href="https://projectdissolve.com">Dissolve</a></td>
           <td>Structure Refinement for Disordered Materials</td>
           <td>
             <a href="https://projectdissolve.com/packages/#release">1.5.1</a>
@@ -95,17 +199,226 @@
             <a href="https://github.com/disorderedmaterials/dissolve">GitHub</a>
           </td>
         </tr>
+
+        <tr>
+          <td>Diffraction</td>
+          <td>&#xa0;</td>
+          <td>
+            <a href="https://github.com/trisyoungs/dlputils/">dlputils</a>
+          </td>
+          <td>
+            Calculation of quantities from, and manipulation of,
+            DL<sub>POLY</sub>/xyz trajectories
+          </td>
+          <td>
+            <a href="https://github.com/trisyoungs/dlputils/releases/tag/1.5.0"
+              >Final</a
+            >
+          </td>
+          <td><a href="https://github.com/trisyoungs/dlputils">GitHub</a></td>
+        </tr>
+
+        <tr>
+          <td>Diffraction</td>
+          <td>
+            <a href="https://github.com/disorderedmaterials/MuSSIC"
+              ><img src="MuSSIC_logo.png" alt="MuSSIC_logo.png"
+            /></a>
+          </td>
+          <td>
+            <a href="https://github.com/disorderedmaterials/MuSSIC">MuSSIC</a>
+          </td>
+          <td>
+            Calculating neutron-weighted structure factors from coarse-grained
+            simulation trajectories
+          </td>
+          <td>
+            <a
+              href="https://github.com/disorderedmaterials/MuSSIC/releases/tag/v1.1"
+              >1.1</a
+            >
+          </td>
+          <td>
+            <a href="https://github.com/disorderedmaterials/MuSSIC/">GitHub</a>
+          </td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr id="imaging">
+          <td>Imaging</td>
+          <td><img src="mantid_imaging.png" alt="mantid_imaging.png" /></td>
+          <td>
+            <a href="https://github.com/mantidproject/mantidimaging/"
+              >Mantid Imaging</a
+            >
+          </td>
+          <td>a graphical toolkit for neutron imaging</td>
+          <td>
+            <a
+              href="https://github.com/mantidproject/mantidimaging/releases/tag/2.7.0"
+              >2.7.0</a
+            >
+          </td>
+          <td>
+            <a href="https://github.com/mantidproject/mantidimaging/">GitHub</a>
+          </td>
+        </tr>
       </tbody>
       <tbody>
         <tr>
-          <td>Spectroscopy</td>
+          <td>Magnetism</td>
+          <td>&#xa0;</td>
+          <td><a href="https://mcphase.github.io/webpage/">McPhase</a></td>
+          <td>Calculation of magnetic properties</td>
+          <td>?</td>
+          <td>?</td>
+        </tr>
+
+        <tr>
+          <td>Magnetism</td>
+          <td><img src="spinw3-logo.png" alt="spinw3-logo.png" /></td>
+          <td><a href="https://spinw.org">SpinW</a></td>
+          <td>Magnetic Spin Wave Calculation</td>
           <td>
-            <a href="https://www.isis.stfc.ac.uk/Pages/MDANSEproject.aspx"
-              ><img src="mdanse.png"
+            <a href="https://github.com/SpinW/spinw/releases/tag/v3.2.0"
+              >3.2.0</a
+            >
+          </td>
+          <td>
+            <a href="https://github.com/SpinW/spinw">GitHub</a>
+          </td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr id="reflect">
+          <td>Reflectometry</td>
+          <td>&#xa0;</td>
+          <td><a href="https://github.com/jfkcooper/HOGBEN">HOGBEN</a></td>
+          <td>
+            optimising the design of a wide range of reflectometry experiments
+          </td>
+          <td>&#xa0;</td>
+          <td><a href="https://github.com/jfkcooper/HOGBEN">GitHub</a></td>
+        </tr>
+
+        <tr>
+          <td>Reflectometry</td>
+          <td>&#xa0;</td>
+          <td>
+            <a href="https://rascalsoftware.github.io/RAT/master/index.html"
+              >RAT</a
+            >
+          </td>
+          <td>Reflectivity Algorithm Toolbox</td>
+          <td>&#xa0;</td>
+          <td><a href="https://github.com/RascalSoftware/RAT">GitHub</a></td>
+        </tr>
+
+        <tr>
+          <td>Reflectivity</td>
+          <td>&#xa0;</td>
+          <td>
+            <a href="https://github.com/arwelHughes/RasCAL_2019">RasCAL</a>
+          </td>
+          <td>Analysing data collected on ISIS reflectometry beamlines</td>
+          <td>
+            <a
+              href="https://github.com/arwelHughes/RasCAL_2019/releases/tag/v1.2"
+              >1.2</a
+            >
+          </td>
+          <td>
+            <a href="https://github.com/arwelHughes/RasCAL_2019">GitHub</a>
+          </td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr id="sans">
+          <td>SANS &amp; SESANS</td>
+          <td>
+            <a href="https://www.sasview.org"
+              ><img src="sasview_logo.png" alt="sasview_logo.png"
             /></a>
           </td>
-          <td><a href="mdanse.html">MDANSE</a></td>
-          <td>Molecular Dynamics Analysis of Neutron Scattering Experiments</td>
+          <td><a href="https://www.sasview.org">SasView</a></td>
+          <td>Fitting and Analysis for Small Angle Scattering</td>
+          <td>
+            <a href="https://github.com/SasView/sasview/releases/tag/v5.0.6"
+              >5.0.6</a
+            >
+          </td>
+          <td><a href="https://github.com/SasView/sasview/">GitHub</a></td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr id="spectroscopy">
+          <td>Spectroscopy</td>
+          <td>&#xa0;</td>
+          <td>
+            <a href="https://github.com/pace-neutrons/Euphonic">Euphonic</a>
+          </td>
+          <td>
+            efficient simulation of phonon bandstructures, density of states and
+            inelastic neutron scattering intensities from force constants
+          </td>
+          <td>
+            <a
+              href="https://github.com/pace-neutrons/Euphonic/releases/tag/v1.3.1"
+              >1.3.1</a
+            >
+          </td>
+          <td>
+            <a href="https://github.com/pace-neutrons/Euphonic">GitHub</a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Spectroscopy</td>
+          <td>&#xa0;</td>
+          <td>
+            <a href="https://github.com/pace-neutrons/Herbert">Herbert</a>
+          </td>
+          <td>
+            collection of utilities for visualisation and analysis of neutron
+            spectroscopy data, providing low-level data manipulation routines
+          </td>
+          <td>
+            <a
+              href="https://github.com/pace-neutrons/Herbert/releases/tag/v3.6.3"
+              >3.6.3</a
+            >
+          </td>
+          <td>
+            <a href="https://github.com/pace-neutrons/Herbert/">GitHub</a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Spectroscopy</td>
+          <td>&#xa0;</td>
+          <td><a href="https://github.com/pace-neutrons/Horace">Horace</a></td>
+          <td>
+            visualisation and analysis of large datasets from time-of-flight
+            neutron inelastic scattering spectrometers
+          </td>
+          <td>
+            <a
+              href="https://github.com/pace-neutrons/Horace/releases/tag/v3.6.4"
+              >3.6.4</a
+            >
+          </td>
+          <td><a href="https://github.com/pace-neutrons/Horace/">GitHub</a></td>
+        </tr>
+
+        <tr>
+          <td>Spectroscopy</td>
+          <td>&#xa0;</td>
+          <td>
+            <a href="https://www.isis.stfc.ac.uk/Pages/MDANSEproject.aspx"
+              >MDANSE</a
+            >
+          </td>
+          <td>Molecule Dynamics Analysis of Neutron Scattering Experiments</td>
           <td>
             <a href="https://www.isis.stfc.ac.uk/Pages/MDANSEproject.aspx"
               >1.5.2</a
@@ -118,67 +431,30 @@
 
         <tr>
           <td>Spectroscopy</td>
-          <td>MDMC</td>
-          <td><a href="mdmc.html">MDMC</a></td>
+          <td>&#xa0;</td>
+          <td>
+            <a href="https://github.com/MDMCProject">MDMC</a>
+          </td>
           <td>Molecular Dynamics Monte Carlo</td>
-          <td></td>
-          <td></td>
+          <td>&#xa0;</td>
+          <td>&#xa0;</td>
         </tr>
       </tbody>
       <tbody>
         <tr>
-          <td>Reflectometry</td>
-          <td>
-            <a href="https://rascalsoftware.github.io/RAT/master/index.html"
-              ><img src="rat.png"
-            /></a>
-          </td>
-          <td><a href="rat.html">RAT</a></td>
-          <td>Reflectivity Algorithm Toolbox</td>
-          <td></td>
-          <td>
-            <a href="https://github.com/RascalSoftware/RAT">GitHub</a>
-          </td>
-        </tr>
-      </tbody>
-      <tbody>
-        <tr>
-          <td>SANS & SESANS</td>
-          <td>
-            <a href="https://www.sasview.org"><img src="sasview_logo.png" /></a>
-          </td>
-          <td><a href="sasview.html">SasView</a></td>
-
-          <td>Fitting and Analysis for Small Angle Scattering</td>
-          <td>
-            <a href="https://github.com/SasView/sasview/releases/tag/v5.0.6"
-              >5.0.6</a
-            >
-          </td>
-          <td><a href="https://github.com/SasView/sasview">GitHub</a></td>
-        </tr>
-      </tbody>
-      <tbody>
-        <tr>
-          <td>Magnetism</td>
-          <td><img src="spinw3-logo.png" /></td>
-          <td><a href="spinw.html">SpinW</a></td>
-          <td>Magnetic Spin Wave Calculation</td>
-          <td></td>
-          <td></td>
-        </tr>
-      </tbody>
-      <tbody>
-        <tr>
-          <td>Stress & Strain</td>
+          <td>Stress &amp; Strain</td>
           <td>
             <a
               href="https://isisneutronmuon.github.io/SScanSS-2/2.1.1/index.html"
-              ><img src="sscanss.png"
+              ><img src="sscanss.png" alt="sscanss.png"
             /></a>
           </td>
-          <td><a href="sscanss.html">SScanSS</a></td>
-
+          <td>
+            <a
+              href="https://isisneutronmuon.github.io/SScanSS-2/2.1.1/index.html"
+              >SScanSS</a
+            >
+          </td>
           <td>Strain Scanning Simulation Software</td>
           <td>
             <a
