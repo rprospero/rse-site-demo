@@ -19,7 +19,10 @@
   }
 }
 
-@media (max-width: 640px) {
+@media only screen and (max-width: 320px) {
+  body {
+    font-size: larger;
+  }
   thead {
     display: none;
   }
