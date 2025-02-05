@@ -3,8 +3,14 @@
   src: url("ComicMono.ttf");
 }
 
+a.dagger {
+    text-decoration: none;
+}
+
 body {
   font-family: "ComicMono", cursive;
+  max-width: max(66em, 80vw);
+  margin: 1em auto;
 }
 .image-list {
   display: flex;
@@ -15,6 +21,9 @@ body {
 figure {
   width: min-content;
   float: right;
+}
+figure:nth-of-type(2n + 1) {
+  float: left;
 }
 figure img {
   max-height: 7em;
@@ -76,4 +85,11 @@ details {
   &[open]::details-content {
     block-size: auto;  /* Or also:  height:auto; */
   }
+}
+
+caption {
+    font-size: smaller;
+    border-top: 1px solid;
+    background-color: #eee;
+    caption-side: bottom;
 }

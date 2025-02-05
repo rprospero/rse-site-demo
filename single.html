@@ -6,12 +6,8 @@
   <body>
     <h2>Scientific Software</h2>
 
-
     <figure>
-      <image src="example.png" />
-      <figcaption>
-        Visualisation of ISIS experiment data
-      </figcaption>
+      <image src="scisoft.png" alt="Scientific Software Logo"/>
     </figure>
 
     <p>
@@ -34,6 +30,13 @@
         Science (stfc.ac.uk)</a>.
     </p>
 
+    <figure>
+      <image src="example.png" alt="Image of Mantid Software in use"/>
+      <figcaption>
+        Visualisation of ISIS experiment data
+      </figcaption>
+    </figure>
+
     <h3>How to access Scientific Software</h3>
 
     There are two options:
@@ -51,6 +54,7 @@
       </li>
       <li> Download/install page to install individual packages yourself </li>
     </ol>
+
 
     <h3>Quick Links</h3>
     <ul>
@@ -83,20 +87,6 @@
           </tr>
         </thread>
         <tbody>
-
-          <tr>
-            <td>
-              <a href="https://github.com/ISISNeutronMuon/SScanSS-2">SScanSS</a>
-            </td>
-            <td>
-              A virtual laboratory for planning, visualising, and
-              setting-up strain scanning experiments on engineering
-              beam-line instruments
-            </td>
-            <td>
-              Engineering diffraction experiments (<a href="https://www.isis.stfc.ac.uk/Pages/engin-x.aspx">EnginX</a>)
-            </td>
-          </tr>
           <tr>
             <td> <a href="https://www.sasview.org">Sasview</a> </td>
 
@@ -112,6 +102,20 @@
             <td> Atomistic model generation of simple shapes such as micelles, vesicles </td>
             <td> SANS instruments (<a href="https://www.isis.stfc.ac.uk/Pages/loq.aspx">Loq</a>, <a href="https://www.isis.stfc.ac.uk/Pages/sans2d.aspx">Sans2D</a>, <a href="https://www.isis.stfc.ac.uk/Pages/Zoom.aspx">Zoom</a>, <a href="https://www.isis.stfc.ac.uk/Pages/Larmor.aspx">Larmor</a>)</td>
           </tr>
+
+          <tr>
+            <td>
+              <a href="https://github.com/ISISNeutronMuon/SScanSS-2">SScanSS</a>
+            </td>
+            <td>
+              A virtual laboratory for planning, visualising, and
+              setting-up strain scanning experiments on engineering
+              beam-line instruments
+            </td>
+            <td>
+              Engineering diffraction experiments (<a href="https://www.isis.stfc.ac.uk/Pages/engin-x.aspx">EnginX</a>)
+            </td>
+          </tr>
         </tbody>
       </table>
     </details>
@@ -119,16 +123,16 @@
     <details>
       <summary>Reduce, Treat and Visualise Your Data </summary>
 
-      On Most instruments at ISIS, the user needs to first
+      <p>On Most instruments at ISIS, the user needs to first
       reduce/treat the raw data to remove the signal from the
       instrument and convert instrument coordinates to sample
       coordinates. This can be a highly complex and mathematical
       process, and is essential for subsequent data
       analysis/interpretation. Also, a key part of this process often
       involves visualisation to see what is happening at various
-      points to guide next steps.
+      points to guide next steps.</p>
 
-      The main data reduction/treatment package we support are the
+      <p>The main data reduction/treatment package we support are the
       mantid framework and mantid imaging. Mantid is not only critical
       to ISIS operations, but is also key to the successful operation
       of other international facilities such as the SNS facility in
@@ -138,9 +142,9 @@
       instruments and upgrades. This combined with taking advantage of
       new computing tech such as with streaming technologies,
       programming paradigms, ML/AI, chip development etc, while being
-      mindful of keeping energy consumption at a minimum.
+      mindful of keeping energy consumption at a minimum.</p>
 
-      Here is table of data treatment/reduction software we support
+      <p>Here is table of data treatment/reduction software we support</p>
 
 
       <table>
@@ -153,8 +157,39 @@
         </thread>
         <tbody>
           <tr>
+            <td>
+              <a href="https://github.com/disorderedmaterials/GudPy">GudPy</a>
+            </td>
+            <td>
+              Correcting raw neutron and x-ray total scattering data to differential cross section
+            </td>
+            <td>
+              Total Scattering Instruments (
+              <a href="https://www.isis.stfc.ac.uk/Pages/GEM.aspx">GEM</a>
+              <a href="https://www.isis.stfc.ac.uk/Pages/nimrod.aspx">Nimrod</a>
+              <a href="https://www.isis.stfc.ac.uk/Pages/sandals.aspx">Sandals</a>
+              )
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <a href="https://github.com/disorderedmaterials/Gudrun">Gudrun</a><a class="dagger" href="#unsupported"><sup>†</sup></a>
+            </td>
+            <td>
+              Correcting raw neutron and x-ray total scattering data to differential cross section
+            </td>
+            <td>
+              Total Scattering Instruments (
+              <a href="https://www.isis.stfc.ac.uk/Pages/GEM.aspx">GEM</a>
+              <a href="https://www.isis.stfc.ac.uk/Pages/nimrod.aspx">Nimrod</a>
+              <a href="https://www.isis.stfc.ac.uk/Pages/sandals.aspx">Sandals</a>
+              )
+            </td>
+          </tr>
+          <tr>
             <td> <a href="https://mantidproject.org/">Mantid</a> </td>
-            <td> General data reduction, treatment and visualization software framework </td>>
+            <td> General data reduction, treatment and visualization software framework </td>
             <td> All ISIS instruments </td>
           </tr>
           <tr>
@@ -179,7 +214,12 @@
               )
             </td>
           </tr>
+
         </tbody>
+        <caption id="unsupported">
+          †: A package that might be used for some experiments, but is
+          not actively supported by the scientific software team
+        </caption>
       </table>
 
     </details>
@@ -208,6 +248,71 @@
           </tr>
         </thread>
         <tbody>
+
+          <tr>
+            <td> <a href="https://projectdissolve.com">Dissolve</a> </td>
+            <td>Structure Refinement for Disordered Materials</td>
+            <td>
+              Total Scattering Instruments (
+              <a href="https://www.isis.stfc.ac.uk/Pages/GEM.aspx">GEM</a>
+              <a href="https://www.isis.stfc.ac.uk/Pages/nimrod.aspx">Nimrod</a>
+              <a href="https://www.isis.stfc.ac.uk/Pages/sandals.aspx">Sandals</a>
+              )
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <a href="https://mcphase.github.io/webpage/">McPhase</a><a class="dagger" href="#unsupported_analysis"><sup>†</sup></a>
+            </td>
+            <td>Calculation of magnetic properties</td>
+          </tr>
+
+          <tr>
+            <td>
+              <a href="https://github.com/ISISNeutronMuon/MDANSE">MDANSE</a>
+            </td>
+            <td>Molecule Dynamics Analysis of Neutron Scattering Experiments</td>
+            <td>
+              Molecular Spectroscopy Instruments
+              <a href="https://www.isis.stfc.ac.uk/Pages/iris.aspx">Iris</a>
+              <a href="https://www.isis.stfc.ac.uk/Pages/let.aspx">LET</a>
+              <a href="https://www.isis.stfc.ac.uk/Pages/maps.aspx">MAPS</a>
+              <a href="https://www.isis.stfc.ac.uk/Pages/osiris.aspx">Osiris</a>
+              <a href="https://www.isis.stfc.ac.uk/Pages/vesuvio.aspx">Vesuvio</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <a href="https://github.com/MDMCProject">MDMC</a>
+            </td>
+            <td>Molecular Dynamics Monte Carlo</td>
+            <td>
+              Molecular Spectroscopy Instruments
+              <a href="https://www.isis.stfc.ac.uk/Pages/iris.aspx">Iris</a>
+              <a href="https://www.isis.stfc.ac.uk/Pages/let.aspx">LET</a>
+              <a href="https://www.isis.stfc.ac.uk/Pages/maps.aspx">MAPS</a>
+              <a href="https://www.isis.stfc.ac.uk/Pages/osiris.aspx">Osiris</a>
+              <a href="https://www.isis.stfc.ac.uk/Pages/vesuvio.aspx">Vesuvio</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <a href="https://rascalsoftware.github.io/RAT/master/index.html">RAT</a
+                                                                                    >
+            </td>
+            <td>Reflectivity Algorithm Toolbox</td>
+            <td> Reflectometry Instruments (
+              <a href="https://www.isis.stfc.ac.uk/Pages/crisp.aspx">Crisp</a>
+              <a href="https://www.isis.stfc.ac.uk/Pages/offspec.aspx">Offspec</a>
+              <a href="https://www.isis.stfc.ac.uk/Pages/polref.aspx">POLREF</a>
+              <a href="https://www.isis.stfc.ac.uk/Pages/surf.aspx">Surf</a>
+              )
+            </td>
+          </tr>
+
           <tr>
             <td> <a href="https://www.sasview.org">Sasview</a> </td>
             <td>
@@ -216,7 +321,27 @@
             </td>
             <td>SANS instruments (<a href="https://www.isis.stfc.ac.uk/Pages/loq.aspx">Loq</a>, <a href="https://www.isis.stfc.ac.uk/Pages/sans2d.aspx">Sans2D</a>, <a href="https://www.isis.stfc.ac.uk/Pages/Zoom.aspx">Zoom</a>, <a href="https://www.isis.stfc.ac.uk/Pages/Larmor.aspx">Larmor</a>)</td>
           </tr>
+
+          <tr>
+            <td><a href="https://spinw.org">SpinW</a></td>
+            <td>Magnetic Spin Wave Calculation</td>
+            <td>
+              Molecular Spectroscopy Instruments
+              <a href="https://www.isis.stfc.ac.uk/Pages/iris.aspx">Iris</a>
+              <a href="https://www.isis.stfc.ac.uk/Pages/let.aspx">LET</a>
+              <a href="https://www.isis.stfc.ac.uk/Pages/maps.aspx">MAPS</a>
+              <a href="https://www.isis.stfc.ac.uk/Pages/osiris.aspx">Osiris</a>
+              <a href="https://www.isis.stfc.ac.uk/Pages/vesuvio.aspx">Vesuvio</a>
+            </td>
+            </td>
+          </tr>
+
         </tbody>
+
+        <caption id="unsupported_analysis">
+          †: A package that might be used for some experiments, but is
+          not actively supported by the scientific software team
+        </caption>
       </table>
     </details>
 
@@ -231,6 +356,28 @@
         under one of the categories above. We also welcome questions on
         these packages/services too.
       </p>
+
+      <table>
+        <thead>
+        </thead>
+        <tr>
+          <td> Software </td>
+          <td> Description </td>
+        </tr>
+        <tbody>
+          <tr>
+            <td> <a href="https://fitbenchmarking.github.io/">FitBenchmarking</a> </td>
+            <td>
+              Tool used to improve our fitting engines with packages
+              we support. The core development of this package is done
+              within the SCD Comp Math group. Our contributions is
+              focussed on enhancements to further its benefits at ISIS
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+
     </details>
 
     <h3>Want to work with us?</h3>
