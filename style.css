@@ -79,13 +79,13 @@ summary.doi {
 }
 
 /* Animate Details and Summary */
-details {
+details.section {
   interpolate-size: allow-keywords;
 }
-details::details-content {
+details.section::details-content {
   height: 0;
 }
-details[open]::details-content {
+details.section[open]::details-content {
   transition: height ease 900ms;
   overflow: hidden;
   height: auto;
