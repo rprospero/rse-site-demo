@@ -56,17 +56,6 @@
     </ol>
 
 
-    <h3>Quick Links</h3>
-    <ul>
-      <li><a href="https://Isis.analysis.stfc.ac.uk">IDAaaS - Data Analysis as a Service cloud</a> (with folders containing your raw ISIS data and, in some cases, automatically reduced data) </li>
-
-      <li><a href="https://data.isis.stfc.ac.uk/">Access to ISIS raw data via catalogue</a> </li>
-
-      <li><a href="https://www.isis.stfc.ac.uk/Pages/Data-Policy.aspx">Data Policy</a> </li>
-
-      <li><a href="https://www.isis.stfc.ac.uk/Pages/Science.aspx">Science at ISIS</a> </li>
-    </ul>
-
     <details>
       <summary>Plan Your Experiments</summary>
 
@@ -84,6 +73,7 @@
             <td> Software </td>
             <td> Description </td>
             <td> Applicable ISIS instruments</td>
+            <td> Citation </td>
           </tr>
         </thread>
         <tbody>
@@ -92,7 +82,8 @@
 
             <td> Sasview is primarily a data analysis package, however it can also be used to theoretically compute expected scattering from different structure types and contrasts in SANS.</td>
 
-            <td>SANS instruments (<a href="https://www.isis.stfc.ac.uk/Pages/loq.aspx">Loq</a>, <a href="https://www.isis.stfc.ac.uk/Pages/sans2d.aspx">Sans2D</a>, <a href="https://www.isis.stfc.ac.uk/Pages/Zoom.aspx">Zoom</a>, <a href="https://www.isis.stfc.ac.uk/Pages/Larmor.aspx">Larmor</a>)</td>
+            <td><a href="https://www.isis.stfc.ac.uk/Pages/loq.aspx">Loq</a>, <a href="https://www.isis.stfc.ac.uk/Pages/sans2d.aspx">Sans2D</a>, <a href="https://www.isis.stfc.ac.uk/Pages/Zoom.aspx">Zoom</a>, <a href="https://www.isis.stfc.ac.uk/Pages/Larmor.aspx">Larmor</a></td>
+            <td> <details><summary class="doi">DOI</summary>https://doi.org/10.5281/zenodo.7581378</details> </td>
           </tr>
 
 
@@ -100,7 +91,7 @@
           <tr>
             <td> <a href="https://gitlab.com/simnavi/shapespyer">Shapespyer</a> </td>
             <td> Atomistic model generation of simple shapes such as micelles, vesicles </td>
-            <td> SANS instruments (<a href="https://www.isis.stfc.ac.uk/Pages/loq.aspx">Loq</a>, <a href="https://www.isis.stfc.ac.uk/Pages/sans2d.aspx">Sans2D</a>, <a href="https://www.isis.stfc.ac.uk/Pages/Zoom.aspx">Zoom</a>, <a href="https://www.isis.stfc.ac.uk/Pages/Larmor.aspx">Larmor</a>)</td>
+            <td> <a href="https://www.isis.stfc.ac.uk/Pages/loq.aspx">Loq</a>, <a href="https://www.isis.stfc.ac.uk/Pages/sans2d.aspx">Sans2D</a>, <a href="https://www.isis.stfc.ac.uk/Pages/Zoom.aspx">Zoom</a>, <a href="https://www.isis.stfc.ac.uk/Pages/Larmor.aspx">Larmor</a></td>
           </tr>
 
           <tr>
@@ -113,7 +104,7 @@
               beam-line instruments
             </td>
             <td>
-              Engineering diffraction experiments (<a href="https://www.isis.stfc.ac.uk/Pages/engin-x.aspx">EnginX</a>)
+              <a href="https://www.isis.stfc.ac.uk/Pages/engin-x.aspx">EnginX</a>
             </td>
           </tr>
         </tbody>
@@ -124,25 +115,25 @@
       <summary>Reduce, Treat and Visualise Your Data </summary>
 
       <p>On Most instruments at ISIS, the user needs to first
-      reduce/treat the raw data to remove the signal from the
-      instrument and convert instrument coordinates to sample
-      coordinates. This can be a highly complex and mathematical
-      process, and is essential for subsequent data
-      analysis/interpretation. Also, a key part of this process often
-      involves visualisation to see what is happening at various
-      points to guide next steps.</p>
+        reduce/treat the raw data to remove the signal from the
+        instrument and convert instrument coordinates to sample
+        coordinates. This can be a highly complex and mathematical
+        process, and is essential for subsequent data
+        analysis/interpretation. Also, a key part of this process often
+        involves visualisation to see what is happening at various
+        points to guide next steps.</p>
 
       <p>The main data reduction/treatment package we support are the
-      mantid framework and mantid imaging. Mantid is not only critical
-      to ISIS operations, but is also key to the successful operation
-      of other international facilities such as the SNS facility in
-      the USA, the ILL facility in France, and the FRM-II facility in
-      Germany. This software framework needs to maintain its benefits
-      to existing instruments while constantly evolve to handle new
-      instruments and upgrades. This combined with taking advantage of
-      new computing tech such as with streaming technologies,
-      programming paradigms, ML/AI, chip development etc, while being
-      mindful of keeping energy consumption at a minimum.</p>
+        mantid framework and mantid imaging. Mantid is not only critical
+        to ISIS operations, but is also key to the successful operation
+        of other international facilities such as the SNS facility in
+        the USA, the ILL facility in France, and the FRM-II facility in
+        Germany. This software framework needs to maintain its benefits
+        to existing instruments while constantly evolve to handle new
+        instruments and upgrades. This combined with taking advantage of
+        new computing tech such as with streaming technologies,
+        programming paradigms, ML/AI, chip development etc, while being
+        mindful of keeping energy consumption at a minimum.</p>
 
       <p>Here is table of data treatment/reduction software we support</p>
 
@@ -153,44 +144,28 @@
             <td> Software </td>
             <td> Description </td>
             <td> Applicable ISIS instruments</td>
+            <td> Citation </td>
           </tr>
         </thread>
         <tbody>
           <tr>
             <td>
-              <a href="https://github.com/disorderedmaterials/GudPy">GudPy</a>
+              <a href="https://github.com/disorderedmaterials/Gudrun">Gudrun</a><sup>†</sup>
             </td>
             <td>
               Correcting raw neutron and x-ray total scattering data to differential cross section
             </td>
             <td>
-              Total Scattering Instruments (
               <a href="https://www.isis.stfc.ac.uk/Pages/GEM.aspx">GEM</a>
               <a href="https://www.isis.stfc.ac.uk/Pages/nimrod.aspx">Nimrod</a>
               <a href="https://www.isis.stfc.ac.uk/Pages/sandals.aspx">Sandals</a>
-              )
-            </td>
-          </tr>
-
-          <tr>
-            <td>
-              <a href="https://github.com/disorderedmaterials/Gudrun">Gudrun</a><a class="dagger" href="#unsupported"><sup>†</sup></a>
-            </td>
-            <td>
-              Correcting raw neutron and x-ray total scattering data to differential cross section
-            </td>
-            <td>
-              Total Scattering Instruments (
-              <a href="https://www.isis.stfc.ac.uk/Pages/GEM.aspx">GEM</a>
-              <a href="https://www.isis.stfc.ac.uk/Pages/nimrod.aspx">Nimrod</a>
-              <a href="https://www.isis.stfc.ac.uk/Pages/sandals.aspx">Sandals</a>
-              )
             </td>
           </tr>
           <tr>
             <td> <a href="https://mantidproject.org/">Mantid</a> </td>
             <td> General data reduction, treatment and visualization software framework </td>
             <td> All ISIS instruments </td>
+            <td> <details><summary class="doi">DOI</summary>http://dx.doi.org/10.5286/SOFTWARE/MANTID</details> </td>
           </tr>
           <tr>
             <td> <a href="https://mantidproject.github.io/mantidimaging/">Mantid Imaging</a> </td>
@@ -204,21 +179,21 @@
           <tr>
             <td> <a href="http://shadow.nd.rl.ac.uk/wimda/">Wimda</a> </td>
             <td> Live analysis of muon spin rotation data </td>
-            <td> Muon instruments (
+            <td>
               <a href="https://www.isis.stfc.ac.uk/Pages/emu.aspx">Emu</a>
               <a href="https://www.isis.stfc.ac.uk/Pages/hiFi.aspx">HiFi</a>
               <a href="https://www.isis.stfc.ac.uk/Pages/muSR.aspx">MuSR</a>
               <a href="https://www.isis.stfc.ac.uk/Pages/chronus.aspx">Chronus</a>
               <a href="https://www.isis.stfc.ac.uk/Pages/argus.aspx">Argus</a>
               <a href="https://www.isis.stfc.ac.uk/Pages/muX.aspx">MuX</a>
-              )
             </td>
           </tr>
 
         </tbody>
-        <caption id="unsupported">
-          †: A package that might be used for some experiments, but is
-          not actively supported by the scientific software team
+        <caption>
+          †: This software that might be used on certain experiments,
+          but is not actively supported by the scientific software
+          team
         </caption>
       </table>
 
@@ -232,7 +207,7 @@
         typically data analysis and to extract structural and
         dynamical information from the reduced data. ISIS covers
         a <a href="https://www.isis.stfc.ac.uk/Pages/Science.aspx">broad
-        range of diverse science</a>, which we help support via a
+          range of diverse science</a>, which we help support via a
         significantly number of specialised packages, as per the list
         below. In the same way as described in the section above,
         suitability is key, alongside keeping up with new instrument
@@ -245,6 +220,7 @@
             <td> Software </td>
             <td> Description </td>
             <td> Applicable ISIS instruments</td>
+            <td> Citation </td>
           </tr>
         </thread>
         <tbody>
@@ -253,17 +229,15 @@
             <td> <a href="https://projectdissolve.com">Dissolve</a> </td>
             <td>Structure Refinement for Disordered Materials</td>
             <td>
-              Total Scattering Instruments (
               <a href="https://www.isis.stfc.ac.uk/Pages/GEM.aspx">GEM</a>
               <a href="https://www.isis.stfc.ac.uk/Pages/nimrod.aspx">Nimrod</a>
               <a href="https://www.isis.stfc.ac.uk/Pages/sandals.aspx">Sandals</a>
-              )
             </td>
           </tr>
 
           <tr>
             <td>
-              <a href="https://mcphase.github.io/webpage/">McPhase</a><a class="dagger" href="#unsupported_analysis"><sup>†</sup></a>
+              <a href="https://mcphase.github.io/webpage/">McPhase</a><sup>†</sup>
             </td>
             <td>Calculation of magnetic properties</td>
           </tr>
@@ -274,7 +248,6 @@
             </td>
             <td>Molecule Dynamics Analysis of Neutron Scattering Experiments</td>
             <td>
-              Molecular Spectroscopy Instruments
               <a href="https://www.isis.stfc.ac.uk/Pages/iris.aspx">Iris</a>
               <a href="https://www.isis.stfc.ac.uk/Pages/let.aspx">LET</a>
               <a href="https://www.isis.stfc.ac.uk/Pages/maps.aspx">MAPS</a>
@@ -289,7 +262,6 @@
             </td>
             <td>Molecular Dynamics Monte Carlo</td>
             <td>
-              Molecular Spectroscopy Instruments
               <a href="https://www.isis.stfc.ac.uk/Pages/iris.aspx">Iris</a>
               <a href="https://www.isis.stfc.ac.uk/Pages/let.aspx">LET</a>
               <a href="https://www.isis.stfc.ac.uk/Pages/maps.aspx">MAPS</a>
@@ -304,12 +276,11 @@
                                                                                     >
             </td>
             <td>Reflectivity Algorithm Toolbox</td>
-            <td> Reflectometry Instruments (
+            <td>
               <a href="https://www.isis.stfc.ac.uk/Pages/crisp.aspx">Crisp</a>
               <a href="https://www.isis.stfc.ac.uk/Pages/offspec.aspx">Offspec</a>
               <a href="https://www.isis.stfc.ac.uk/Pages/polref.aspx">POLREF</a>
               <a href="https://www.isis.stfc.ac.uk/Pages/surf.aspx">Surf</a>
-              )
             </td>
           </tr>
 
@@ -319,28 +290,33 @@
               Perform both model based fitting of SAS data as well as
               model-free invariant calcultions.
             </td>
-            <td>SANS instruments (<a href="https://www.isis.stfc.ac.uk/Pages/loq.aspx">Loq</a>, <a href="https://www.isis.stfc.ac.uk/Pages/sans2d.aspx">Sans2D</a>, <a href="https://www.isis.stfc.ac.uk/Pages/Zoom.aspx">Zoom</a>, <a href="https://www.isis.stfc.ac.uk/Pages/Larmor.aspx">Larmor</a>)</td>
+            <td><a href="https://www.isis.stfc.ac.uk/Pages/loq.aspx">Loq</a>, <a href="https://www.isis.stfc.ac.uk/Pages/sans2d.aspx">Sans2D</a>, <a href="https://www.isis.stfc.ac.uk/Pages/Zoom.aspx">Zoom</a>, <a href="https://www.isis.stfc.ac.uk/Pages/Larmor.aspx">Larmor</a></td>
+            <td>
+              <details>
+                <summary class="doi">DOI</summary>
+                https://doi.org/10.5281/zenodo.7581378
+              </details>
+            </td>
           </tr>
 
           <tr>
             <td><a href="https://spinw.org">SpinW</a></td>
             <td>Magnetic Spin Wave Calculation</td>
             <td>
-              Molecular Spectroscopy Instruments
               <a href="https://www.isis.stfc.ac.uk/Pages/iris.aspx">Iris</a>
               <a href="https://www.isis.stfc.ac.uk/Pages/let.aspx">LET</a>
               <a href="https://www.isis.stfc.ac.uk/Pages/maps.aspx">MAPS</a>
               <a href="https://www.isis.stfc.ac.uk/Pages/osiris.aspx">Osiris</a>
               <a href="https://www.isis.stfc.ac.uk/Pages/vesuvio.aspx">Vesuvio</a>
             </td>
-            </td>
           </tr>
 
         </tbody>
 
-        <caption id="unsupported_analysis">
-          †: A package that might be used for some experiments, but is
-          not actively supported by the scientific software team
+        <caption>
+          †: This software that might be used for certain experiments,
+          but is not actively supported by the scientific software
+          team
         </caption>
       </table>
     </details>

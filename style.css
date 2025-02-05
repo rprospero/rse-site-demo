@@ -6,6 +6,9 @@
 a.dagger {
     text-decoration: none;
 }
+a.cite {
+    text-decoration: none;
+}
 
 body {
   font-family: "ComicMono", cursive;
@@ -68,6 +71,11 @@ table {
 summary {
     font-size: 1.17em; /* Default font size for h3 */
     font-weight: bolder;
+}
+
+summary.doi {
+    font-size: 1em;
+    font-weight: normal;
 }
 
 /* Animate Details and Summary */
