@@ -4,10 +4,10 @@
 }
 
 a.dagger {
-    text-decoration: none;
+  text-decoration: none;
 }
 a.cite {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 body {
@@ -69,35 +69,31 @@ table {
 }
 
 summary {
-    font-size: 1.17em; /* Default font size for h3 */
-    font-weight: bolder;
+  font-size: 1.17em; /* Default font size for h3 */
+  font-weight: bolder;
 }
 
 summary.doi {
-    font-size: 1em;
-    font-weight: normal;
+  font-size: 1em;
+  font-weight: normal;
 }
 
 /* Animate Details and Summary */
 details {
   interpolate-size: allow-keywords;
-
-  &::details-content {
-    transition:
-      block-size 500ms,
-      content-visibility 1s allow-discrete;
-    overflow: hidden;
-    block-size: 0;     /* Or also:  height:0; */
-  }
-
-  &[open]::details-content {
-    block-size: auto;  /* Or also:  height:auto; */
-  }
+}
+details::details-content {
+  height: 0;
+}
+details[open]::details-content {
+  transition: height ease 900ms;
+  overflow: hidden;
+  height: auto;
 }
 
 caption {
-    font-size: smaller;
-    border-top: 1px solid;
-    background-color: #eee;
-    caption-side: bottom;
+  font-size: smaller;
+  border-top: 1px solid;
+  background-color: #eee;
+  caption-side: bottom;
 }
