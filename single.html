@@ -1,0 +1,273 @@
+<html>
+  <head>
+    <title>Scientific Software</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h2>Scientific Software</h2>
+
+
+    <figure>
+      <image src="example.png" />
+      <figcaption>
+        Visualisation of ISIS experiment data
+      </figcaption>
+    </figure>
+
+    <p>
+      The scientific software (SciSoft) group develops and supports
+      software for experiment planning, data reduction/treatment, data
+      visualisation and data analysis.
+    </p>
+
+    <p>
+      Computing is essential to the science we support, which includes
+      software packages and services fundamental to our overall
+      scientific process at ISIS. These enable our community to
+      optimise experiments, reduce, treat, interpret and visualise the
+      results of their experiments. This is particularly important for
+      many of our newer instruments, some of which have hundreds of
+      thousands of detectors and generate a volume of data comparable
+      to the Human Genome every day. For more information about the
+      science at ISIS,
+      see <a href="https://www.isis.stfc.ac.uk/Pages/Science.aspx">ISIS
+        Science (stfc.ac.uk)</a>.
+    </p>
+
+    <h3>How to access Scientific Software</h3>
+
+    There are two options:
+
+    <ol>
+      <li>
+        <a href="https://Isis.analysis.stfc.ac.uk">IDAaaS Cloud
+          service</a>, which offers remote access to your ISIS data and
+        pre-configured compute resources containing the software for
+        analysing it (including the ones listed below). If you ever
+        find that IDAaaS is not offering a piece of software you
+        require, you can request it through the support email
+        <a href="mailto:supportanalysis@stfc.ac.uk">supportanalysis@stfc.ac.uk</a>
+        or ask your local contact to request it on your behalf.
+      </li>
+      <li> Download/install page to install individual packages yourself </li>
+    </ol>
+
+    <h3>Quick Links</h3>
+    <ul>
+      <li><a href="https://Isis.analysis.stfc.ac.uk">IDAaaS - Data Analysis as a Service cloud</a> (with folders containing your raw ISIS data and, in some cases, automatically reduced data) </li>
+
+      <li><a href="https://data.isis.stfc.ac.uk/">Access to ISIS raw data via catalogue</a> </li>
+
+      <li><a href="https://www.isis.stfc.ac.uk/Pages/Data-Policy.aspx">Data Policy</a> </li>
+
+      <li><a href="https://www.isis.stfc.ac.uk/Pages/Science.aspx">Science at ISIS</a> </li>
+    </ul>
+
+    <details>
+      <summary>Plan Your Experiments</summary>
+
+      <p>
+        All experiments need a level of planning upfront to increase
+        the chance of success, such as with sample preparation, instrument
+        alignment, scheduling the time of the experiment and so on. For
+        some types of experiments, additional specialist software is
+        provided. Below is a list of such.
+      </p>
+
+      <table>
+        <thread>
+          <tr>
+            <td> Software </td>
+            <td> Description </td>
+            <td> Applicable ISIS instruments</td>
+          </tr>
+        </thread>
+        <tbody>
+
+          <tr>
+            <td>
+              <a href="https://github.com/ISISNeutronMuon/SScanSS-2">SScanSS</a>
+            </td>
+            <td>
+              A virtual laboratory for planning, visualising, and
+              setting-up strain scanning experiments on engineering
+              beam-line instruments
+            </td>
+            <td>
+              Engineering diffraction experiments (<a href="https://www.isis.stfc.ac.uk/Pages/engin-x.aspx">EnginX</a>)
+            </td>
+          </tr>
+          <tr>
+            <td> <a href="https://www.sasview.org">Sasview</a> </td>
+
+            <td> Sasview is primarily a data analysis package, however it can also be used to theoretically compute expected scattering from different structure types and contrasts in SANS.</td>
+
+            <td>SANS instruments (<a href="https://www.isis.stfc.ac.uk/Pages/loq.aspx">Loq</a>, <a href="https://www.isis.stfc.ac.uk/Pages/sans2d.aspx">Sans2D</a>, <a href="https://www.isis.stfc.ac.uk/Pages/Zoom.aspx">Zoom</a>, <a href="https://www.isis.stfc.ac.uk/Pages/Larmor.aspx">Larmor</a>)</td>
+          </tr>
+
+
+
+          <tr>
+            <td> <a href="https://gitlab.com/simnavi/shapespyer">Shapespyer</a> </td>
+            <td> Atomistic model generation of simple shapes such as micelles, vesicles </td>
+            <td> SANS instruments (<a href="https://www.isis.stfc.ac.uk/Pages/loq.aspx">Loq</a>, <a href="https://www.isis.stfc.ac.uk/Pages/sans2d.aspx">Sans2D</a>, <a href="https://www.isis.stfc.ac.uk/Pages/Zoom.aspx">Zoom</a>, <a href="https://www.isis.stfc.ac.uk/Pages/Larmor.aspx">Larmor</a>)</td>
+          </tr>
+        </tbody>
+      </table>
+    </details>
+
+    <details>
+      <summary>Reduce, Treat and Visualise Your Data </summary>
+
+      On Most instruments at ISIS, the user needs to first
+      reduce/treat the raw data to remove the signal from the
+      instrument and convert instrument coordinates to sample
+      coordinates. This can be a highly complex and mathematical
+      process, and is essential for subsequent data
+      analysis/interpretation. Also, a key part of this process often
+      involves visualisation to see what is happening at various
+      points to guide next steps.
+
+      The main data reduction/treatment package we support are the
+      mantid framework and mantid imaging. Mantid is not only critical
+      to ISIS operations, but is also key to the successful operation
+      of other international facilities such as the SNS facility in
+      the USA, the ILL facility in France, and the FRM-II facility in
+      Germany. This software framework needs to maintain its benefits
+      to existing instruments while constantly evolve to handle new
+      instruments and upgrades. This combined with taking advantage of
+      new computing tech such as with streaming technologies,
+      programming paradigms, ML/AI, chip development etc, while being
+      mindful of keeping energy consumption at a minimum.
+
+      Here is table of data treatment/reduction software we support
+
+
+      <table>
+        <thread>
+          <tr>
+            <td> Software </td>
+            <td> Description </td>
+            <td> Applicable ISIS instruments</td>
+          </tr>
+        </thread>
+        <tbody>
+          <tr>
+            <td> <a href="https://mantidproject.org/">Mantid</a> </td>
+            <td> General data reduction, treatment and visualization software framework </td>>
+            <td> All ISIS instruments </td>
+          </tr>
+          <tr>
+            <td> <a href="https://mantidproject.github.io/mantidimaging/">Mantid Imaging</a> </td>
+            <td> Data reduction, treatment and visualization software specifically for imaging </td>
+            <td> <a href="https://www.isis.stfc.ac.uk/Pages/Imat.aspx">IMAT</a> </td>
+          </tr>
+          <tr>
+            <td> <a href="https://mantidproject.org/MantidPlot:_SliceViewer">Sliceviewer</a> </td>
+            <td> A viewer for multi-dimensional data, presenting a 2D slice through the higher dimensions
+          </tr>
+          <tr>
+            <td> <a href="http://shadow.nd.rl.ac.uk/wimda/">Wimda</a> </td>
+            <td> Live analysis of muon spin rotation data </td>
+            <td> Muon instruments (
+              <a href="https://www.isis.stfc.ac.uk/Pages/emu.aspx">Emu</a>
+              <a href="https://www.isis.stfc.ac.uk/Pages/hiFi.aspx">HiFi</a>
+              <a href="https://www.isis.stfc.ac.uk/Pages/muSR.aspx">MuSR</a>
+              <a href="https://www.isis.stfc.ac.uk/Pages/chronus.aspx">Chronus</a>
+              <a href="https://www.isis.stfc.ac.uk/Pages/argus.aspx">Argus</a>
+              <a href="https://www.isis.stfc.ac.uk/Pages/muX.aspx">MuX</a>
+              )
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+    </details>
+
+    <details>
+      <summary>Interpret Your Data</summary>
+
+      <p>
+        Once raw data has been reduced/treated, the next step is
+        typically data analysis and to extract structural and
+        dynamical information from the reduced data. ISIS covers
+        a <a href="https://www.isis.stfc.ac.uk/Pages/Science.aspx">broad
+        range of diverse science</a>, which we help support via a
+        significantly number of specialised packages, as per the list
+        below. In the same way as described in the section above,
+        suitability is key, alongside keeping up with new instrument
+        developments and computing technologies.
+      </p>
+
+      <table>
+        <thread>
+          <tr>
+            <td> Software </td>
+            <td> Description </td>
+            <td> Applicable ISIS instruments</td>
+          </tr>
+        </thread>
+        <tbody>
+          <tr>
+            <td> <a href="https://www.sasview.org">Sasview</a> </td>
+            <td>
+              Perform both model based fitting of SAS data as well as
+              model-free invariant calcultions.
+            </td>
+            <td>SANS instruments (<a href="https://www.isis.stfc.ac.uk/Pages/loq.aspx">Loq</a>, <a href="https://www.isis.stfc.ac.uk/Pages/sans2d.aspx">Sans2D</a>, <a href="https://www.isis.stfc.ac.uk/Pages/Zoom.aspx">Zoom</a>, <a href="https://www.isis.stfc.ac.uk/Pages/Larmor.aspx">Larmor</a>)</td>
+          </tr>
+        </tbody>
+      </table>
+    </details>
+
+    <details>
+      <summary>Other tools / services / packages</summary>
+
+      <p>
+        See the list below for other services/packages we support
+        that are not yet or are only very early in ISIS user operation,
+        tools we contribute to and use internally to help deliverer
+        better scientific software, and software that does not fall
+        under one of the categories above. We also welcome questions on
+        these packages/services too.
+      </p>
+    </details>
+
+    <h3>Want to work with us?</h3>
+
+    <p>
+      The software packages we develop are all Open Source and each
+      have some level of capacity to review external code
+      contributions. Please see individual package descriptions for
+      contact details. Also, don’t hesitate to
+      email <a href="mailto:anders.markvardsen@stfc.ac.uk">anders.markvardsen@stfc.ac.uk</a>
+      for other queries - such as collaborating on multiple packages
+      and other ideas for collaboration.
+    </p>
+
+    <h3>Want to join us?</h3>
+
+    <p>
+      Fancy working with us developing software in the beautiful
+      Oxfordshire or Cheshire countryside​? Or remotely at home?
+    </p>
+    <p>
+      If you're experienced and want to help us make a difference,
+      we'd love to hear from you.
+    </p>
+    <p>
+      Also, if you're interested in starting your career with us, as
+      an apprentice, intern, vacation or sandwich student, or work
+      experience student, get in touch.
+    </p>
+    <p>
+      For more information, please
+      see: <a href="https://www.isis.stfc.ac.uk/Pages/Careers-in-Computing.aspx">Careers
+        in Computing</a>
+    </p>
+
+
+
+
+  </body>
+</html>

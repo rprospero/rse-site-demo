@@ -14,6 +14,7 @@ body {
 }
 figure {
   width: min-content;
+  float: right;
 }
 figure img {
   max-height: 7em;
@@ -53,4 +54,26 @@ tbody {
 table {
   border-collapse: collapse;
   text-align: center;
+}
+
+summary {
+    font-size: 1.17em; /* Default font size for h3 */
+    font-weight: bolder;
+}
+
+/* Animate Details and Summary */
+details {
+  interpolate-size: allow-keywords;
+
+  &::details-content {
+    transition:
+      block-size 500ms,
+      content-visibility 1s allow-discrete;
+    overflow: hidden;
+    block-size: 0;     /* Or also:  height:0; */
+  }
+
+  &[open]::details-content {
+    block-size: auto;  /* Or also:  height:auto; */
+  }
 }
