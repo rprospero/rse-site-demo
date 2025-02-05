@@ -19,6 +19,44 @@
   }
 }
 
+@media (max-width: 640px) {
+  thead {
+    display: none;
+  }
+  tr {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  td {
+    display: inline;
+    text-align: right;
+  }
+
+  td:nth-child(1)::before {
+    float: left;
+    content: "Software: ";
+    font-weight: bolder;
+  }
+
+  td:nth-child(2)::before {
+    float: left;
+    content: "Description: ";
+    font-weight: bolder;
+  }
+
+  td:nth-child(3)::before {
+    float: left;
+    content: "ISIS Instruments: ";
+    font-weight: bolder;
+  }
+
+  td:nth-child(4)::before {
+    float: left;
+    content: "Citation: ";
+    font-weight: bolder;
+  }
+}
+
 a {
   color: var(--link);
 }
