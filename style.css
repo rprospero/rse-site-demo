@@ -3,6 +3,26 @@
   src: url("ComicMono.ttf");
 }
 
+:root {
+  --background: white;
+  --foreground: black;
+  --link: #00d;
+  --off: #ddd;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: black;
+    --foreground: white;
+    --link: #08f;
+    --off: #222;
+  }
+}
+
+a {
+  color: var(--link);
+}
+
 a.dagger {
   text-decoration: none;
 }
@@ -14,6 +34,8 @@ body {
   font-family: "ComicMono", cursive;
   max-width: max(66em, 80vw);
   margin: 1em auto;
+  color: var(--foreground);
+  background-color: var(--background);
 }
 .image-list {
   display: flex;
@@ -43,7 +65,7 @@ h2 {
 .infobox {
   float: right;
   width: 3em;
-  background-color: #eee;
+  background-color: var(-off);
 }
 
 td img {
@@ -52,7 +74,7 @@ td img {
 }
 
 tr:nth-child(2n + 0) {
-  background-color: #eee;
+  background-color: var(--off);
 }
 
 thead {
@@ -60,7 +82,7 @@ thead {
 }
 
 tbody {
-  border-top: 1px solid black;
+  border-top: 1px solid var(--foreground);
 }
 
 table {
@@ -94,6 +116,6 @@ details.section[open]::details-content {
 caption {
   font-size: smaller;
   border-top: 1px solid;
-  background-color: #eee;
+  background-color: var(--off);
   caption-side: bottom;
 }
