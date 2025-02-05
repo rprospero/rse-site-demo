@@ -70,6 +70,7 @@ a.cite {
 
 body {
   font-family: "ComicMono", cursive;
+  font-size: 2em;
   max-width: max(66em, 80vw);
   margin: 1em auto;
   color: var(--foreground);
